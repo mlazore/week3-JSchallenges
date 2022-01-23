@@ -1,4 +1,4 @@
-function person(){
+function person() {
     const pii = {
         name: "Martin Lazore",
         ssn: `000000000`,
@@ -12,5 +12,4 @@ return{
 }
 
 const p1 = person();
-
 console.log(p1.getName());
