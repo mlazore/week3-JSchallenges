@@ -1,9 +1,13 @@
-function sharePizza (pizzaSlices){
-    return `Each person gets` + pizzaSlices;
-}
+function cutPizzaSlices(x) {
+    return function(pieces){
+     return x / pieces;
+    }
+};
 
-let first = sharePizza(` 4.00 slices of pizza`);
-let second = sharePizza(` 2.67 slices of pizza`);
+let cutPizzaSlices = (pieces) => {
+    return (x) => Each person gets ${pieces / x} slices of pizza;
+};
+let pizza = cutPizzaSlices(8);
 
-console.log(first)
-console.log(second)
+console.log(pizza(2));
+console.log(pizza(3));
